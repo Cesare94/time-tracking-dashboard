@@ -1,0 +1,843 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    background-color: hsl(226, 43%, 10%);
+  
+}
+
+.container {
+    width: 990px;
+    margin: 50px auto;
+    color: white;
+    display: grid;
+    grid-template-areas: 
+    'intro icon-work icon-play icon-study'
+    'intro work play study'
+    'intro  icon-exercise icon-social icon-self'
+    'report exercise social self';
+    row-gap: 20px;
+  
+    
+}
+
+/* ***************** INTRO SECTION***************** */
+
+.container .intro {
+    width: 230px;
+    grid-area: intro;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color:hsl(235, 45%, 61%);
+    border-radius: 15px;
+    z-index: 1;
+
+}
+
+.container .intro img {
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin-bottom: 50px;
+    
+}
+
+.container .intro span {
+    font-size: 12px;
+    position: relative;
+    
+}
+
+.container .intro .for {
+    position: relative;
+    bottom: 4%;
+    left: 40px;
+}
+
+.container .intro h1 {
+    font-size: 32px;
+    position: relative;
+    bottom: 10%;
+    font-weight: 200;
+}
+
+.container .intro .robson {
+    font-size: 32px;
+    position: relative;
+    bottom: 20%;
+    font-weight: 200;
+}
+
+
+/* ***************** REPORT SECTION***************** */
+
+.container .report {
+    width: 230px;
+    grid-area: report;
+    position: relative;
+    bottom: 30px;
+    background-color: hsl(235, 46%, 20%); 
+    height: 150px; 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.container ul {
+    list-style: none;
+}
+
+.container ul li {
+    padding-top: 15px;
+}
+
+.container ul li button {
+    border: none;
+    background-color: hsl(235, 46%, 20%);
+    color: white;
+    cursor: pointer;
+}
+.container ul li button:hover {
+    color: hsl(236, 100%, 87%);
+}
+
+/* ***************** WORK SECTION***************** */
+
+.container .work {
+    position: relative;
+    bottom: 50px;
+    width: 200px;
+    grid-area: work;
+    border-radius: 10px;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.container .icon-work {
+    width: 200px;
+    background-color: hsl(15, 100%, 70%);
+    height: 50px;
+    text-align: right;
+    grid-area: icon-work;  
+    background-image: url('../images/icon-work.svg');
+    background-repeat: no-repeat;
+    background-position: center right 15px;
+    
+}
+
+.container .work h5 {
+    padding-left: 25px;
+    
+}
+
+.container .work span {
+    padding-left: 5px;
+    font-size: 14px;
+    position: relative;
+    bottom: 20%;
+    left: 10%;
+
+}
+.container .work h1 {
+    padding-left: 5px;
+    font-weight: 200;
+    position: relative;
+    left: 10%;
+    bottom: 20%;
+    
+    
+   
+}
+
+.container .work img {
+    position: relative;
+    left: 80%;
+    bottom: 25%;
+    font-size: 9px;
+}
+
+
+/* ***************** PLAY SECTION***************** */
+
+.container .icon-play {
+    width: 200px;
+    background-color: hsl(195, 74%, 62%);
+    background-image: url('../images/icon-play.svg');
+    background-repeat: no-repeat;
+    background-position: center right 15px;
+    height: 50px;
+    text-align: right;
+    grid-area: icon-play;
+}
+
+
+
+.container .play {
+    width: 200px;
+    grid-area: play;
+    position: relative;
+    bottom: 50px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+}
+
+.container .play h5 {
+    padding-left: 25px;
+    
+}
+
+.container .play span {
+    padding-left: 5px;
+    font-size: 14px;
+    position: relative;
+    bottom: 20%;
+    left: 10%;
+
+}
+.container .play h1 {
+    padding-left: 5px;
+    font-weight: 200;
+    position: relative;
+    left: 10%;
+    bottom: 20%;
+    
+    
+   
+}
+
+.container .play img {
+    position: relative;
+    left: 80%;
+    bottom: 25%;
+    font-size: 9px;
+}
+
+/* ***************** STUDY SECTION***************** */
+
+.container .icon-study {
+    width: 200px;
+    background-color: hsl(348, 100%, 68%);
+    background-image: url('../images/icon-study.svg');
+    background-repeat: no-repeat;
+    background-position: center right 15px;
+    height: 50px;
+    text-align: right;
+    grid-area: icon-study; 
+}
+
+
+.container .study {
+    width: 200px;
+    position: relative;
+    bottom: 50px;
+    border-radius: 10px;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.container .study h5 {
+    padding-left: 25px;
+    
+}
+
+.container .study span {
+    padding-left: 5px;
+    font-size: 14px;
+    position: relative;
+    bottom: 20%;
+    left: 10%;
+
+}
+.container .study h1 {
+    padding-left: 5px;
+    font-weight: 200;
+    position: relative;
+    left: 10%;
+    bottom: 20%;
+    
+    
+   
+}
+
+.container .study img {
+    position: relative;
+    left: 80%;
+    bottom: 25%;
+    font-size: 9px;
+}
+
+/* ***************** EXERCISE SECTION***************** */
+
+.container .icon-exercise {
+    width: 200px;
+    background-color: hsl(145, 58%, 55%);
+    background-image: url('../images/icon-exercise.svg');
+    background-repeat: no-repeat;
+    background-position: center right 15px;
+    height: 50px;
+    text-align: right;
+    grid-area: icon-exercise;   
+}
+
+
+.container .exercise {
+    width: 200px;
+    grid-area: exercise;
+    position: relative;
+    bottom: 50px;
+    border-radius: 10px;
+    background-color: hsl(235, 46%, 20%);
+
+  
+}
+
+.container .exercise h5 {
+    padding-left: 25px;
+    
+}
+
+.container .exercise span {
+    padding-left: 5px;
+    font-size: 14px;
+    position: relative;
+    bottom: 20%;
+    left: 10%;
+
+}
+.container .exercise h1 {
+    padding-left: 5px;
+    font-weight: 200;
+    position: relative;
+    left: 10%;
+    bottom: 20%;
+    
+    
+   
+}
+
+.container .exercise img {
+    position: relative;
+    left: 80%;
+    bottom: 25%;
+    font-size: 9px;
+}
+
+/* ***************** SOCIAL SECTION***************** */
+
+.container .icon-social {
+    width: 200px;
+    background-color: hsl(264, 64%, 52%);
+    height: 50px;
+    background-image: url('../images/icon-social.svg');
+    background-repeat: no-repeat;
+    background-position: center right 15px;
+    text-align: right;
+    grid-area: icon-social;  
+}
+
+
+.container .social {
+    width: 200px;
+    grid-area: social;
+    position: relative;
+    bottom: 50px;
+    border-radius: 10px;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.container .social h5 {
+    padding-left: 25px;
+    
+}
+
+.container .social span {
+    padding-left: 5px;
+    font-size: 14px;
+    position: relative;
+    bottom: 20%;
+    left: 10%;
+
+}
+.container .social h1 {
+    padding-left: 5px;
+    font-weight: 200;
+    position: relative;
+    left: 10%;
+    bottom: 20%;
+    
+    
+   
+}
+
+.container .social img {
+    position: relative;
+    left: 80%;
+    bottom: 25%;
+    font-size: 9px;
+}
+
+/* ***************** SELF-CARE SECTION***************** */
+
+.container .icon-self {
+    width: 200px;
+    background-color: hsl(43, 84%, 65%);
+    background-image: url('../images/icon-self-care.svg');
+    background-repeat: no-repeat;
+    background-position: center right 15px;
+    height: 50px;
+    text-align: right;
+    grid-area: icon-self;
+    
+}
+
+.container .self-care {
+    width: 200px;
+    grid-area: self;
+    position: relative;
+    bottom: 50px;
+    border-radius: 10px;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.container .self-care h5 {
+    padding-left: 25px;
+    
+}
+
+.container .self-care span {
+    padding-left: 5px;
+    font-size: 14px;
+    position: relative;
+    bottom: 20%;
+    left: 10%;
+
+}
+.container .self-care h1 {
+    padding-left: 5px;
+    font-weight: 200;
+    position: relative;
+    left: 10%;
+    bottom: 20%;
+    
+    
+   
+}
+
+.container .self-care img {
+    position: relative;
+    left: 80%;
+    bottom: 25%;
+    font-size: 9px;
+}
+
+
+/* ********** media query ********** */
+
+@media screen and (max-width: 375px) {
+
+    .container {
+        width: 300px;
+        position: relative;
+        left: 5px;
+        border: 1px solid white;
+        color: white;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .container .intro {
+        width: 295px;
+        display: flex;
+        flex-direction: row;
+        height: 150px;
+    
+    }
+    
+    .container .intro img {
+        width: 60%;
+        height: 100%;
+        
+    }
+    
+    .container .intro span {
+        font-size: 10px;
+        position: relative;
+        top: 30px;
+        left: 10px;
+        padding-left: 5px;
+        
+       
+    }
+
+    .container .intro .for {
+        position: relative;
+        left: 4%;
+    }
+
+    
+    .container .intro h1 {
+        font-size: 20px;
+        position: relative;
+        top: 30px;
+        right: 20%;
+        padding-left: 5px;
+        
+        
+    }
+
+    .container .intro .robson{
+        font-size: 20px;
+        position: relative;
+        top: 30px;
+        right: 20%;
+        padding-left: 5px;
+    }
+
+  
+    
+
+    .container .report {
+        height: 75px; 
+        width: 295px;
+        
+    }
+
+    .container ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        right: 20px;
+
+    }
+
+    /* ***************** WORK SECTION***************** */
+
+.container .work {
+    width: 295px;
+    display: grid;
+    grid-template-areas: 'work image'
+                         'h1  span'
+                         ;
+
+}
+
+.container .icon-work {
+    width: 295px;
+
+    
+}
+
+.container .work h5 {
+    padding-left: 25px;
+    grid-area: work;
+    
+}
+
+.container .work span {
+    padding-left: 5px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0%;
+    left: 7%;
+    top: 30%;
+    grid: span;
+
+}
+.container .work h1 {
+    padding-left: 5px;
+    position: relative;
+    bottom: 10%;
+    grid: h1;
+    
+    
+   
+}
+
+.container .work img {
+    position: relative;
+    left: 0;
+    bottom: 0%;
+    top: 40%;
+    left: 60%;
+    width: 10%;
+    height: 10%;
+    grid: image;
+}
+
+
+/* ***************** PLAY SECTION***************** */
+
+.container .icon-play {
+    width: 295px; 
+   
+}
+
+
+.container .play {
+    width: 295px;
+    display: grid;
+    grid-template-areas: 'play image'
+                         'h1  span'
+                         ;
+
+}
+
+.container .play h5 {
+    padding-left: 25px;
+    grid-area: play;
+    
+}
+
+.container .play span {
+    padding-left: 5px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0%;
+    left: 7%;
+    top: 30%;
+    grid: span;
+
+}
+.container .play h1 {
+    padding-left: 5px;
+    position: relative;
+    bottom: 10%;
+    grid: h1;
+    
+    
+   
+}
+
+.container .play img {
+    position: relative;
+    left: 0;
+    bottom: 0%;
+    top: 40%;
+    left: 60%;
+    width: 10%;
+    height: 10%;
+    grid: image;
+}
+
+/* ***************** STUDY SECTION***************** */
+
+.container .icon-study {
+    width: 295px;
+    
+}
+
+
+.container .study {
+    width: 295px;
+    display: grid;
+    grid-template-areas: 'study image'
+                         'h1  span'
+                         ;
+    
+}
+
+.container .study h5 {
+    padding-left: 25px;
+    grid-area: study;
+    
+}
+
+.container .study span {
+    padding-left: 5px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0%;
+    left: 7%;
+    top: 30%;
+    grid: span;
+
+}
+.container .study h1 {
+    padding-left: 5px;
+    position: relative;
+    bottom: 10%;
+    grid: h1;
+    
+    
+   
+}
+
+.container .study img {
+    position: relative;
+    left: 0;
+    bottom: 0%;
+    top: 40%;
+    left: 60%;
+    width: 10%;
+    height: 10%;
+    grid: image;
+}
+
+/* ***************** EXERCISE SECTION***************** */
+
+.container .icon-exercise {
+    width: 295px;
+   
+}
+
+
+.container .exercise {
+    width: 295px;
+    display: grid;
+    grid-template-areas: 'exercise image'
+                         'h1  span'
+                         ;
+  
+
+  
+}
+
+.container .exercise h5 {
+    padding-left: 25px;
+    grid-area: exercise;
+    
+}
+
+.container .exercise span {
+    padding-left: 5px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0%;
+    left: 7%;
+    top: 30%;
+    grid: span;
+
+}
+.container .exercise h1 {
+    padding-left: 5px;
+    position: relative;
+    bottom: 10%;
+    grid: h1;
+    
+    
+   
+}
+
+.container .exercise img {
+    position: relative;
+    left: 0;
+    bottom: 0%;
+    top: 40%;
+    left: 60%;
+    width: 10%;
+    height: 10%;
+    grid: image;
+}
+
+/* ***************** SOCIAL SECTION***************** */
+
+.container .icon-social {
+    width: 295px;
+}
+
+
+.container .social {
+    width: 295px;
+    display: grid;
+    grid-template-areas: 'social image'
+                         'h1  span'
+                         ;
+}
+
+.container .social h5 {
+    padding-left: 25px;
+    grid-area: social;
+    
+}
+
+.container .social span {
+    padding-left: 5px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0%;
+    left: 7%;
+    top: 30%;
+    grid: span;
+
+}
+.container .social h1 {
+    padding-left: 5px;
+    position: relative;
+    bottom: 10%;
+    grid: h1;
+    
+    
+   
+}
+
+.container .social img {
+    position: relative;
+    left: 0;
+    bottom: 0%;
+    top: 40%;
+    left: 60%;
+    width: 10%;
+    height: 10%;
+    grid: image;
+}
+
+/* ***************** SELF-CARE SECTION***************** */
+
+.container .icon-self {
+    width: 295px;
+   
+    
+}
+
+.container .self-care {
+    width: 295px;
+    display: grid;
+    grid-template-areas: 'self image'
+                         'h1  span'
+                         ;
+   
+}
+
+.container .self-care h5 {
+    padding-left: 25px;
+    grid-area: self;
+    
+}
+
+.container .self-care span {
+    padding-left: 5px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0%;
+    left: 7%;
+    top: 30%;
+    grid: span;
+}
+.container .self-care h1 {
+    padding-left: 5px;
+    position: relative;
+    bottom: 10%;
+    grid: h1;
+    
+   
+}
+
+.container .self-care img {
+    position: relative;
+    left: 0;
+    bottom: 0%;
+    top: 40%;
+    left: 60%;
+    width: 10%;
+    height: 10%;
+    grid: image;
+}
+
+
+    
+    
+    
+}
